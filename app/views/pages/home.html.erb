@@ -6,13 +6,9 @@
                         <div class="row">
                             <div class="col-md-1 col-sm-2 col-xs-3">
                                 <div class="bar__module">
-                                    <%= link_to root_path do %> 
-
-                                    <%= image_tag('logo-dark.png', class:'logo logo-dark', 
-                                    alt:'logo')  %>
-
-                                    <%= image_tag('logo-light.png', class:'logo logo-light', alt:'logo') %>
-                                    <% end %>
+                                   <%= link_to "#" do %>
+        <%= image_tag ('logo-dark.png', class: 'logo logo-dark', alt: 'logo')%>
+         <%= image_tag ('logo-light.png', class: 'logo logo-light', alt: 'logo') %>    <% end %>
                                 </div>
                             </div>
                             <div class="col-md-11 col-sm-10 col-xs-9">
@@ -26,19 +22,22 @@
                 <div class="notification pos-right pos-top side-menu bg--white" data-notification-link="sidebar-menu" data-animation="from-right">
                     <div class="side-menu__module pos-vertical-center text-right">
                         <ul class="menu-vertical">
-                        <li><%= link_to "Home", home_path %></li>
-                        <li><%= link_to "Team", team_path %></li>
-                          <li><a href="" >Meet Our Tailors</a></li>
-                          <li><a href="#" >Partner with Us</li>
-
-  </ul>
+                               <%= link_to "<i class=\"h4\"></i>".html_safe, "#"-%>Home
+                                </li>   
+                                   <%= link_to "<i class=\"h4\"></i>".html_safe, "#"-%>Team
+                                </li>   
+                                <%= link_to "<i class=\"h4\"></i>".html_safe, "#"-%>Meet Our Tailors
+                                </li>   
+                                  <%= link_to "<i class=\"h4\"></i>".html_safe, "#"-%>Partner with Us
+                                </li>
+                        </ul>
                     </div>
                     <div class="side-menu__module pos-bottom pos-absolute col-xs-12 text-right">
                         <ul class="social-list list-inline list--hover">
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
+                         <li data-filter="*" class="socicon socicon-google icon icon--xs"></li>
+                         <li data-filter="*" class="socicon socicon-twitter icon icon--xs"></li>
+                         <li data-filter="*" class="socicon socicon-facebook icon icon--xs"></li>
+                         <li data-filter="*" class="socicon socicon-instagram icon icon--xs"></li>
                         </ul>
                     </div>
                 </div>
@@ -46,21 +45,26 @@
         </div>
         <div class="main-container">
             <section class="cover height-80 imagebg text-center" data-overlay="5">
-                <div class="background-image-holder background--top"> 
-                <%= image_tag('headline-1.png', alt:'background' ) %>
-  <div class="container pos-vertical-center">
+                <div class="background-image-holder background--top">
+                      <%= image_tag('landing-1.jpg',  alt: 'background') %>
+                     </div>
+                <div class="container pos-vertical-center">
                     <div class="row">
-                        <div class="col-sm-8"> 
-                        <%= image_tag('headline-1.png', class:'unmarg--bottom', alt:'Image') %>
-<h3> A Modern Sourcing &amp; Design Company that Specializes in Craftsmanship, Small Quantities and Quick Response for Online Retail.</h3>
+                        <div class="col-sm-8">
+                      <%= image_tag('headline-1.png', class: 'unmarg--bottom', alt: 'Image') %>
+
+                        
+                            <h3> A Modern Sourcing &amp; Design Company that Specializes in Craftsmanship, Small Quantities and Quick Response for Online Retail.</h3>
                         </div>
                     </div>
                 </div>
             </section>
             <section class="imageblock switchable feature-large">
                 <div class="imageblock__content col-md-6 col-sm-4 pos-right">
-                    <div class="background-image-holder">
-                    <%= image_tag('education-5.jpg', alt:'image') %>
+                    <div class="background-image-holder"> 
+                        <%= image_tag('education-5.jpg', alt: 'image') %>
+                       
+                       </div>
                 </div>
                 <div class="container">
                     <div class="row">
@@ -75,9 +79,10 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-4">
-                            <div class="feature feature-1"> 
-                            <%= image_tag('cowork-1.jpg', alt:'Image') %>
+                            <div class="feature feature-1">
+                        <%= image_tag('cowork-1.jpg', alt:'Image') %>
 
+                            
                                 <div class="feature__body boxed boxed--lg boxed--border">
                                     <h3>Quick Response</h3>
                                     <p class="lead"> timing is everything.</p> <a href="#">
@@ -87,8 +92,10 @@
                         </div>
                         <div class="col-sm-4">
                             <div class="feature feature-1"> 
-                            <%= image_tag('landing-1.jpg', alt:'Image') %>
-                            <div class="feature__body boxed boxed--lg boxed--border">
+
+                               <%= image_tag('landing-1.jpg', alt:'Image') %>
+                                
+                                <div class="feature__body boxed boxed--lg boxed--border">
                                     <h3>Small Quantities</h3>
                                     <p class="lead">built for test and repeats</p> <a href="#">
                             Learn More
@@ -96,9 +103,10 @@
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="feature feature-1">
-                            <%= image_tag('inner-6.jpg', alt:'Image') %>
-                            <div class="feature__body boxed boxed--lg boxed--border">
+                            <div class="feature feature-1"> 
+                                <%= image_tag('inner-6.jpg', alt:'Image') %>
+                                
+                                <div class="feature__body boxed boxed--lg boxed--border">
                                     <h3>Beautiful Design</h3>
                                     <p class="lead">to inspire, create and produce.</p> <a href="#">
                             Learn More
@@ -116,8 +124,8 @@
                             <p class="lead"> We at Creatnet no longer look to the past for how we should work for the future. As a company we are dedicated to providing fabrics, materials and processes that are no longer harmful to our environment or customers, in addition to providing fair wages and benefits to all of our craftsmen and tailors.<br> </p>
                         </div>
                         <div class="col-sm-4 col-md-4 col-md-offset-1">
-                     <%= image_tag('landing-7.jpg', alt:'Image', class:'border--round box-shadow-wide') %>
-</div>
+                            <%= image_tag('landing-7.jpg', class:'border--round box-shadow-wide', alt:'Image') %>
+                       </div>
                         <div class="col-sm-4 col-md-2 col-md-offset-1">
                             <hr class="short">
                             <p> Creatnet is making a pledge to incorporate sustainable and ethical fabrics such as organic cotton, bamboo, soy, hemp and natural dyes so that our clothes are as good as they make our client feel. With India’s core historical strengths in natural fabrics processing, we are ablate provide you the quality, volume and price for modern silhouettes. </p>
@@ -141,10 +149,9 @@
                         <div class="masonry-filter-holder">
                             <div class="masonry__filters" data-filter-all-text="All Categories">
                                 <ul>
-
-                                <li class="active" data-filter="*">All Categories</li>
-                                    <li data-filter=".design">Design</li>
-                                    <li data-filter=".marketing">Marketing</li>
+                                    <li data-filter="*" class="active"><span>All Categories</span></li>
+                                    <li data-filter="design"><span>design</span></li>
+                                <li data-filter="marketing"><span>marketing</span></li>
                                 </ul>
                             </div>
                         </div>
@@ -152,46 +159,47 @@
                     <div class="masonry__container bg--secondary masonry--active">
                         <div class="col-sm-4 col-xs-12 masonry__item filter-marketing" data-masonry-filter="Marketing">
                             <div class="project-thumb hover-element height-40">
-                                <%= link_to "#" do %>
-                               
+                                <a href="#">
                                     <div class="hover-element__initial">
                                         <div class="background-image-holder"> 
-                                      <%= image_tag('work-6.jpg', alt:'work-6.jpg') %>
-                                        </div>
+                                            <%= image_tag('work-6.jpg', alt:'background') %>
+                                           
+                                    </div>
                                     <div class="hover-element__reveal" data-overlay="9">
                                         <div class="project-thumb__title">
                                             <h5>Nike Active</h5> <span>Digital Marketing</span> </div>
                                     </div>
-                              <% end %>
+                                </a>
                             </div>
                         </div>
                         <div class="col-sm-4 col-xs-12 masonry__item filter-design" data-masonry-filter="Design">
                             <div class="project-thumb hover-element height-40">
-                               <%= link_to "#" do %>
+                                <a href="#">
                                     <div class="hover-element__initial">
                                         <div class="background-image-holder"> 
-                                   <%= image_tag('work-1.jpg', alt:'background') %>
-                                      </div>
+                                            <%= image_tag('work-1.jpg', alt:'background')%>
+                                            </div>
                                     </div>
                                     <div class="hover-element__reveal" data-overlay="9">
                                         <div class="project-thumb__title">
                                             <h5>Unvest Capital</h5> <span>Brand Collateral</span> </div>
                                     </div>
-                            <% end %>
+                                </a>
                             </div>
                         </div>
                         <div class="col-sm-4 col-xs-12 masonry__item filter-design" data-masonry-filter="Design">
                             <div class="project-thumb hover-element height-40">
-                              <%= link_to "#" do %>
+                                <a href="#">
                                     <div class="hover-element__initial">
                                         <div class="background-image-holder"> 
-                                   <%= img_tag('work-1.jpg', alt:'background') %>
+                                            <%= image_tag('work-1.jpg', alt:'background') %>
+                                             </div>
                                     </div>
                                     <div class="hover-element__reveal" data-overlay="9">
                                         <div class="project-thumb__title">
                                             <h5>Unvest Capital</h5> <span>Brand Collateral</span> </div>
                                     </div>
-                            <% end %>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -199,8 +207,9 @@
             </section>
             <section class="switchable imagebg" data-overlay="4">
                 <div class="background-image-holder"> 
-                <%= image_tag('hero-1.jpg', alt:'background') %>
-              <div class="container">
+                    <%= image_tag('hero-1.jpg', alt:'background') %>
+                 </div>
+                <div class="container">
                     <div class="row">
                         <div class="col-sm-5">
                             <div class="map-container border--round" data-maps-api-key="AIzaSyCfo_V3gmpPm1WzJEC9p_sRbgvyVbiO83M" data-address="123 Rathdowne street, Carlton Victoria" data-marker-title="Stack" data-map-style="[{&quot;featureType&quot;:&quot;landscape&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#FFBB00&quot;},{&quot;saturation&quot;:43.400000000000006},{&quot;lightness&quot;:37.599999999999994},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#FFC200&quot;},{&quot;saturation&quot;:-61.8},{&quot;lightness&quot;:45.599999999999994},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;road.arterial&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#FF0300&quot;},{&quot;saturation&quot;:-100},{&quot;lightness&quot;:51.19999999999999},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;road.local&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#FF0300&quot;},{&quot;saturation&quot;:-100},{&quot;lightness&quot;:52},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;water&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#0078FF&quot;},{&quot;saturation&quot;:-13.200000000000003},{&quot;lightness&quot;:2.4000000000000057},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;poi&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#00FF6A&quot;},{&quot;saturation&quot;:-1.0989010989011234},{&quot;lightness&quot;:11.200000000000017},{&quot;gamma&quot;:1}]}]" data-map-zoom="15"></div>
@@ -216,9 +225,7 @@
                                     <div class="col-sm-6 col-xs-12"> <label>Your Name:</label> <input type="text" name="Name" class="validate-required"> </div>
                                     <div class="col-sm-6 col-xs-12"> <label>Email Address:</label> <input type="email" name="email" class="validate-required validate-email"> </div>
                                     <div class="col-sm-12 col-xs-12"> <label>Message:</label> <textarea rows="3" name="Message" class="validate-required"></textarea> </div>
-                                    <div class="col-sm-5 col-md-4 col-xs-6">
-
-                                     <button type="submit" class="btn btn--primary type--uppercase">Send Enquiry</button> </div>
+                                    <div class="col-sm-5 col-md-4 col-xs-6"> <button type="submit" class="btn btn--primary type--uppercase">Send Enquiry</button> </div>
                                 </form>
                             </div>
                         </div>
